@@ -419,7 +419,8 @@ async def on_message(message):
         if cham == 79:
             d = "세주아니"
         await message.channel.send(d)
-BOT_TOKEN = "ODg3MjgyNzI1OTUyODE5MjIw.YUB4bg.L7ZEBtrXFDnvZYbgo_5FoH-Ew50"
+        
+
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
 
