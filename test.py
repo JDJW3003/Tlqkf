@@ -1,12 +1,11 @@
-import discord, asyncio, random, os
+import discord
+import asyncio, random, os
 
 client = discord.Client()
 
 
 @client.event
 async def on_ready():
-    print(client.user.name)
-    print('성공적으로 봇이 시작되었습니다.')
     game = discord.Game('?롤덤이 도움말')
     await client.change_presence(status=discord.Status.online, activity=game)
 
@@ -157,7 +156,7 @@ async def on_message(message):
         await message.channel.send(d)
 
       
-            if message.content == "?롤덤이 포지션 추천":
+    if message.content == "?롤덤이 포지션 추천":
         ran = random.randint(0,5)
         if ran == 0:
             d = "탑"
@@ -419,8 +418,9 @@ async def on_message(message):
         if cham == 79:
             d = "세주아니"
         await message.channel.send(d)
-        
 
-access_token = os.environ["BOT_TOKEN"]
+
+
+access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
 
