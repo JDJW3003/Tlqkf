@@ -256,7 +256,7 @@ async def on_message(message):
         await message.channel.send(d)
 
     if message.content == "?롤덤이 챔피언 전체 추천":
-        cham = random.randint(0,39)
+        cham = random.randint(0,115)
         if cham == 0:
             d = "녹턴"
         if cham == 1:
@@ -398,9 +398,9 @@ async def on_message(message):
         if cham == 69:
             d = "트런들"
         if cham == 70:
-            d = "헤카림"
+            d = "헤카림" 
         if cham == 71:
-            d = "노틸러스"
+            d = "노틸러스" # 여기 부터가 전사 부역할
         if cham == 72:
             d = "누누와 윌럼프"
         if cham == 73:
@@ -417,6 +417,87 @@ async def on_message(message):
             d = "사이온"
         if cham == 79:
             d = "세주아니"
+        if cham == 79:  
+            d = "스웨인"
+        if cham == 80:
+            d = "신지드"    
+        if cham == 81:
+            d = "쓰레쉬"
+        if cham == 82:
+            d = "엘리스"
+        if cham == 83:
+            d = "오른"
+        if cham == 84:
+            d = "자르반 4세"
+        if cham == 85:
+            d = "자크"
+        if cham == 86:
+            d = "타릭" #까지가 전사 끝
+        if cham == 87:
+            d = "니코" #부터가 메이지
+        if cham == 88:
+            d = "세라핀"
+        if cham == 89:
+            d = "럭스"
+        if cham == 90:
+            d = "리산드라"
+        if cham == 91:
+            d = "모르가나"
+        if cham == 92:
+            d = "베이가"
+        if cham == 93:
+            d = "벡스"
+        if cham == 94:
+            d = "벨코즈"
+        if cham == 95:
+            d = "브랜드"
+        if cham == 96:
+            d = "블라디미르" 
+        if cham == 96:  
+            d = "빅토르"  
+        if cham == 97:
+            d = "신드라"
+        if cham == 98:
+            d = "제라스"
+        if cham == 99:
+            d = "아우렐리온 솔"
+        if cham == 100:
+            d = "아지르"
+        if cham == 101:
+            d = "애니"
+        if cham == 102:
+            d = "애니비아"
+        if cham == 103:
+            d = "오리아나"
+        if cham == 103:
+            d = "자이라"
+        if cham == 104:
+            d = "조이"
+        if cham == 104:
+            d = "직스"
+        if cham == 105:
+            d = "카르마"
+        if cham == 106:
+            d = "카서스"
+        if cham == 107:
+            d = "카시오페아"
+        if cham == 108:
+            d = "케넨"
+        if cham == 109:
+            d = "탈리야"
+        if cham == 110:
+            d = "트위스티드 페이트"
+        if cham == 111:
+            d = "피들스틱"
+        if cham == 112:
+            d = "하이머딩거"
+        if cham == 113:
+            d = "갈리오"
+        if cham == 114:
+            d = "그라가스"
+        if cham == 115:
+            d = "나미"
+        
         await message.channel.send(d)
 
 
