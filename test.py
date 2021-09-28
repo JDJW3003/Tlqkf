@@ -42,7 +42,11 @@ async def on_message(message):
     if message.content == "?롤덤이 추첨 안내":
         embed = discord.Embed(title="롤랜덤이 사용방법", description=" :bulb: Tip : 밑에 있는 도움말을 보고 이용해주세요 :D", color=0x17164D)
         embed.add_field(name=":newspaper: 전체 추첨 명령어", value=" **```?롤덤이 챔피언 전체 추천```** ", inline=False)
-        embed.add_field(name=":newspaper: 포지션 별 추첨 명령어", value=" :one: **```?롤덤이 챔피언 암살자 추천```** :two: **```?롤덤이 챔피언 메이지 추천```** :three: **```?롤덤이 챔피언 서포터 추천```** :four: **```?롤덤이 챔피언 전사 추천```** :five: **```?롤덤이 챔피언 탱커 추천```**", inline=False)
+        embed.add_field(name=":newspaper: 포지션 별 추첨 명령어", value="**```?롤덤이 암살자 추천```**", inline=False)
+        embed.add_field(name=":newspaper: 포지션 별 추첨 명령어", value="**```?롤덤이 메이지 추천```**", inline=False)
+        embed.add_field(name=":newspaper: 포지션 별 추첨 명령어", value="**```?롤덤이 서포터 추천```**", inline=False)
+        embed.add_field(name=":newspaper: 포지션 별 추첨 명령어", value="**```?롤덤이 전사 추천```**", inline=False)
+        embed.add_field(name=":newspaper: 포지션 별 추첨 명령어", value="**```?롤덤이 탱커 추천```**", inline=False)
         embed.set_footer(text="문의는 discordbotgang#0010")
         await message.channel.send(embed=embed)
 
@@ -171,7 +175,7 @@ async def on_message(message):
         await message.channel.send(d)
         
         
-    if message.content == "?롤덤이 챔피언 암살자 추천":
+    if message.content == "?롤덤이 암살자 추천":
         cham = random.randint(0,39)
         if cham == 0:
             d = "녹턴"
@@ -255,7 +259,7 @@ async def on_message(message):
             d = "피오라"
         await message.channel.send(d)
 
-    if message.content == "?롤덤이 챔피언 전체 추천":
+    if message.content == "?롤덤이 전체 추천":
         cham = random.randint(0,115)
         if cham == 0:
             d = "녹턴"
