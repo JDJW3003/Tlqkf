@@ -22,6 +22,12 @@ async def on_message(message):
   
     if message.content == "?롤덤이 잘 가":
         await message.channel.send("잘 가")
+          
+    if message.content == "ㅅㅂ":
+        await message.channel.send("욕하지마세요!!!")
+    if message.content == "박태준 없지":
+        await message.channel.send("내가봤을 때도 없어보임")
+
 
 
 
