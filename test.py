@@ -29,6 +29,11 @@ async def on_message(message):
     if message.content == "기리보이 노래":
         await message.channel.send("p!play 기리보이 빈집")
         await message.channel.send("p!play 기리보이 우리서로사랑하지는말자")
+    if message.content == ".이정원":
+        await message.channel.send("이정원 없지이정원 없지이정원 없지이정원 없지이정원 없지")
+        await message.channel.send("이정원 진짜 뭐함이정원 진짜 뭐함이정원 진짜 뭐함이정원 진짜 뭐함")
+    if message.content == ".":
+        await message.channel.send("뭘 또 . 이야 ㅋ")
 
 
 
