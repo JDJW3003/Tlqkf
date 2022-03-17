@@ -9,9 +9,6 @@ async def on_ready():
     game = discord.Game('?롤덤이 도움말')
     await client.change_presence(status=discord.Status.online, activity=game)
     
-@client.command()
-async def clear(ctx, amount=5):
-    await ctx.channel.purge(limit=amount)
 @client.event
 async def on_message(message):
     if message.content == "?롤덤이 안녕":
@@ -25,7 +22,6 @@ async def on_message(message):
   
     if message.content == "?롤덤이 잘 가":
         await message.channel.send("잘 가")
-          
     if message.content == "ㅅㅂ":
         await message.channel.send("욕하지마세요!!!")
     if message.content == "박태준 없지":
